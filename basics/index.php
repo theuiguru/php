@@ -34,3 +34,39 @@
 // echo $names[3];
 
 // Diving Into Arrays
+// $people = [
+// 	'chris' => 26,
+// 	'billy' => 21
+// ];
+// var_dump($people);
+// echo $people['billy'];
+// $users = [
+// 	[
+// 		'username' => 'alex',
+// 		'email' => 'alex@codecourse.com',
+// 		'likes' => ['food', 'code']
+// 	],
+// 	[
+// 		'username' => 'billy',
+// 		'email' => 'billy@codecourse.com',
+// 		'likes' => ['food', 'books']
+// 	],
+// 	[
+// 		'username' => 'josh',
+// 		'email' => 'josh@codecourse.com',
+// 		'likes' => ['reading', 'cooking']
+// 	]
+// ];
+// var_dump($users);
+// echo $users[1]['username'];
+// echo '<pre>', var_dump($users), '</pre>';
+// echo $users[1]['email'];
+// echo $users[0]['likes'][0];
+// foreach($users as $user) {
+// 	var_dump($user);
+// 	echo $user['username'] . '<br/>';
+// }
+// $users[2] = 'josh';
+// $users[1]['likes'][1] = 'dogs';
+// $users[1]['about'] = 'I am learning to code.';
+// echo '<pre>', var_dump($users), '</pre>';
