@@ -70,3 +70,13 @@
 // $users[1]['likes'][1] = 'dogs';
 // $users[1]['about'] = 'I am learning to code.';
 // echo '<pre>', var_dump($users), '</pre>';
+
+// Data Types: NULL 
+// $name = null;
+// var_dump($name);
+// $name = 'chris';
+// unset($name);
+// echo $name;
+// var_dump($name);
+
+// Concatenation
