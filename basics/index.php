@@ -1,7 +1,11 @@
 <?php
 // Variables
+// $name = 'chris';
+// echo $name;
 // $daysInWeek = 7;
+// $daysInWeek = 8;
 // echo $text = 'There are ' . $daysInWeek . ' days in a week.';
+// echo $text;
 
 // Strings
 // $message = 'It\'s a lovely day today';
@@ -13,14 +17,19 @@
 // echo '<a href="http://www.google.com">Link</a>';
 
 // Integers and Floats
+// $daysInWeek = -1800;
 // $pi = 3.141;
 // $bankBalance = 1.2e6;
 // echo 'Your bank balance is $' . $bankBalance;
 
 // Booleans
-// $fileIsUploaded = false;
+// $fileIsUploaded = true; //true, false, 1, 0, -1 is not a value
 // if($fileIsUploaded) {
 // 	echo 'Your file was uploaded.';
+// }
+// $isInt = is_int(1);
+// if($isInt) {
+// 	echo 'that is an integer.';
 // }
 // var_dump(is_int('chris')); //false
 // var_dump(is_int(1)); //true
@@ -67,7 +76,7 @@
 // 	echo $user['username'] . '<br/>';
 // }
 // $users[2] = 'josh';
-// $users[1]['likes'][1] = 'dogs';
+// $users[1]['likes'][1] = 'dogs'; //change values to properties
 // $users[1]['about'] = 'I am learning to code.';
 // echo '<pre>', var_dump($users), '</pre>';
 
@@ -80,3 +89,64 @@
 // var_dump($name);
 
 // Concatenation
+// $weather = 'sunny';
+// $degrees = 30.5;
+// $status = "The current weather is {$weather} and it's {$degrees}* degrees"; //variable parsing
+// echo $status;
+// var_dump($status);
+// $name = 'chris';
+// echo 'My name is ' , $name; //comma notation
+
+// IF statements and operators: IF statement basics
+// $dayOfWeek = 4;
+// $daysOfWeek = [
+// 	1 => 'Monday',
+// 	2 => 'Tuesday',
+// 	3 => 'Wednesday'
+// ];
+//var_dump(array_keys($daysOfWeek));
+// if(in_array($dayOfWeek, array_keys($daysOfWeek))) {
+// 	echo $daysOfWeek[$dayOfWeek];
+// } else {
+// 	echo 'That is not a valid day.';
+// }
+// $name = 'Chris';
+// if($name) {
+// 	echo 'Your name is ' . $name;
+// 	if(strlen($name) > 10) {
+// 		echo '. Oh, and you have a very long name';
+// 	}
+// }
+// $name = 'Christopher Thomas';
+// if(!$name) {
+// 	return;
+// }
+// echo 'Your name is ' . $name . '';
+// if(strlen($name) > 10) {
+// 	echo '. Oh, and you have a long name.';
+// }
+// if(false) {
+// 	echo 'This will always be run.';
+// }
+
+// IF statements and operators: Logical operators
+// $username = 'chris';
+// $password = 'ilovefood';
+// if($username == 'chris' && $password == 'ilovefood') {
+// 	echo 'You are in!';
+// }
+// $dayOfWeek = 1;
+// $workingThatWeekend = false;
+// if(($dayOfWeek == 6 || $dayOfWeek == 7) && !$workingThatWeekend) {
+// 	echo 'You have a day off!';
+// }
+
+// IF statements and operators: Comparison operators
+// $uploaded = -5;
+// if($uploaded === true) {
+// 	echo 'Uploaded';
+// }
+$tablesAvailable = true;
+if($tablesAvailable !== true) {
+	echo 'No tables available';
+}
