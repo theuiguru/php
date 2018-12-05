@@ -1,0 +1,29 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><title>Reading JSON with jQuery</title></head><body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.js"></script><script>
+/*$.getJSON('articles.json', function(data) {
+	console.log(data);
+});*/
+$.ajax({
+	url: 'articles.json',
+	dataType: 'json',
+	type: 'get',
+	cache: false,
+	success: function(data) {
+		//console.log(data);
+		$(data.articles).each(function(index, value) {
+			console.log(value.name);
+		});
+	}
+});
+
+// $.ajax({
+//     type: 'GET',
+//     dataType: 'xml',
+//     url: 'https://thelazyeyeofsports.wordpress.com/feed',
+//     success: function(xmlDocument) {
+//         var rss = $(xmlDocument.firstChild);
+//         console.log(rss.find('item'));
+//     }
+// });
+</script></body></html>
